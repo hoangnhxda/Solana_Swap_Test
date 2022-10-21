@@ -1,4 +1,5 @@
-/client/package-lock.jon
+/client/package-lock.json
+/client/yarn.lock
 /client/node_modules
 /smartcontract/target
 /smartcontract/Cargo.lock
