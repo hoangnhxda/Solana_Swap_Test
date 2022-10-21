@@ -1,0 +1,25 @@
+
+[package]
+name = "solana-bpf-swaptoken"
+version = "0.0.1"
+description = "Remitano test Solana swap SOL with SPL token"
+authors = ["Nguyen Huy Hoang <hoangnh.xda@gmail.com>"]
+repository = "https://github.com/hoangnhxda/Solana_Swap_Test"
+license = "Apache-2.0"
+edition = "2021"
+
+[features]
+no-entrypoint = []
+
+[dependencies]
+borsh = "0.9.3"
+borsh-derive = "0.9.1"
+solana-program = "~1.10.35"
+
+[dev-dependencies]
+solana-program-test = "~1.10.35"
+solana-sdk = "~1.10.35"
+
+[lib]
+name = "swaptoken"
+crate-type = ["cdylib", "lib"]
