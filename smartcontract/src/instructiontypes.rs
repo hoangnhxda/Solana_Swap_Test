@@ -23,14 +23,14 @@ impl InstructionTypes {
                 }
                 1 => {
                     let data_amount = Self::merge_u8_arr_to_uint64(elements).unwrap();
-                    msg!("Command: SwapSolToMove ");
+                    msg!("Command: SwapSolToMove amount: {}", data_amount);
                     return Ok(Self::SwapSolToMove {
                         amount: data_amount
                     });
                 }
                 2 => {
                     let data_amount = Self::merge_u8_arr_to_uint64(elements).unwrap();
-                    msg!("Command: SwapSolToMove ");
+                    msg!("Command: SwapMoveToSol amount: {}", data_amount);
                     return Ok(Self::SwapMoveToSol {
                         amount: data_amount
                     });
